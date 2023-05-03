@@ -36,7 +36,7 @@
 		}
 		
 		/* estilo para o botão submit */
-		input[type=submit] {
+		button[type=submit] {
 			width: 100%;
 			background-color: #4CAF50;
 			color: white;
@@ -48,7 +48,7 @@
 		}
 		
 		/* estilo para o botão submit quando o mouse passa por cima */
-		input[type=submit]:hover {
+		button[type=submit]:hover {
 			background-color: #45a049;
 		}
 		
@@ -125,11 +125,34 @@
             <label for="algoMais">Algo a mais que queira acrescentar?</label>
             <textarea name="algoMais" id="algoMais" cols="20" rows="10"></textarea>
             
-            <input class="btnEnviar" type="submit" value="Enviar">
         </form>
+        <button class="btnEnviar" type="submit">Enviar</button>
     </div>
 
 
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js" type="module"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyALizVrr7-g6qUIuvWdWqqHijW3ct4nn9w",
+          authDomain: "turmadeaerobica.firebaseapp.com",
+          projectId: "turmadeaerobica",
+          storageBucket: "turmadeaerobica.appspot.com",
+          messagingSenderId: "131746295513",
+          appId: "1:131746295513:web:e006e94724a999b79818c8",
+          measurementId: "G-TFY42TKKG5"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
 </body>
 </html>
