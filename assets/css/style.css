@@ -1,0 +1,30 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    background-color: #333;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.navbar .logo a{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* estilo para a div container */
+.container {
+    margin-top: 80px;
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+}

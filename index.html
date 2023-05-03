@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Turma de Aerobica</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+	<style>
+		/* estilo para o nav bar */
+		
+		
+		/* estilo para o texto do nav bar */
+		.navbar a {
+			float: left;
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 17px;
+		}
+		
+		/* estilo para o input fields */
+		input[type=text], select, input[type=email], input[type=date], textarea {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+		
+		/* estilo para o botão submit */
+		input[type=submit] {
+			width: 100%;
+			background-color: #4CAF50;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+		
+		/* estilo para o botão submit quando o mouse passa por cima */
+		input[type=submit]:hover {
+			background-color: #45a049;
+		}
+		
+		
+	</style>
+</head>
+<body>
+	<!-- nav bar -->
+	<div class="navbar">
+        <div class="logo">
+            <a href="#">Turma de Aerobica<!--<img src="logo.png" alt="Turma de Aerobica">---></a>
+        </div>
+	</div>
+
+	<!-- formulario -->
+	<div class="container">
+        <div class="priTexto" style="display: none;">
+            <p>
+                O formulário de cadastro da Academia Turma de Aeróbica é uma ferramenta importante para garantir uma experiência segura e personalizada para cada aluno. Ao preencher o formulário com informações precisas sobre nome, idade, sexo, número de BI, morada, número de telefone e email, os instrutores da academia podem ajustar os treinos e acompanhar o progresso de cada aluno de forma mais eficiente. Além disso, o formulário também ajuda a manter um registro atualizado dos alunos, permitindo que a academia entre em contato para informar sobre novidades e promoções. Por isso, é recomendável que todos os novos alunos preencham o formulário de cadastro para aproveitar ao máximo sua experiência na Academia Turma de Aeróbica.
+            </p>
+        </div>
+    
+        
+		<form action="#" method="post" style="margin-top: 10px;">
+			<label for="nome">Nome:</label>
+			<input type="text" id="nome" name="nome" required>
+			
+            <label for="data">Data de nascimento:</label>
+            <input type="date" id="data" name="data">
+
+			
+			<label for="sexo">Sexo:</label>
+			<select id="sexo" name="sexo">
+				<option value="masculino">Masculino</option>
+				<option value="feminino">Feminino</option>
+				<option value="outro">Outro</option>
+			</select>
+			
+			<label for="bi">Número de BI:</label>
+			<input type="text" id="bi" name="bi" required>
+			
+			<label for="morada">Morada:</label>
+			<input type="text" id="morada" name="morada" required>
+			
+			<label for="telefone">Número de telefone:</label>
+			<input type="text" id="telefone" name="telefone" required>
+            
+			<label for="telefoneFamiliar">Número de telefone de um familiar:</label>
+			<input type="text" id="telefoneFamiliar" name="telefone" required>
+			
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+
+            <label for="objectivo">Qual é o teu objectivo ao participar na nossa academia?</label>
+			<select id="objectivo" name="objectivo">				
+                <option value="Selecione uma opção">Selecione uma opção</option>
+				<option value="Diminuir barriga">Diminuir barriga</option>
+				<option value="Perder peso">Perder peso</option>
+				<option value="Aumentar Bum-bum">Aumentar Bum-bum</option>
+				<option value="outro">Outro</option>
+			</select>
+            
+			<label for="maiorVicio">Qual é a maior causa do teu problema?</label>
+			<select id="maiorVicio" name="maiorVicio">
+                <option value="Selecione uma opção">Selecione uma opção</option>
+                <option value="Alcool">Alcool</option>
+				<option value="Comida">Comida</option>
+				<option value="outro">Outro</option>
+			</select>
+
+			<label for="turmaGinastica">Já participou em alguma turma de ginástica antes? Se sim, qual foi?</label>
+			<input type="text" id="turmaGinastica" name="turmaGinastica" required>
+
+            <label for="algoMais">Algo a mais que queira acrescentar?</label>
+            <textarea name="algoMais" id="algoMais" cols="20" rows="10"></textarea>
+            
+            <input class="btnEnviar" type="submit" value="Enviar">
+        </form>
+    </div>
+
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

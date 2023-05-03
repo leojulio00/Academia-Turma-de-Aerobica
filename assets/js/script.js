@@ -1,0 +1,16 @@
+
+var nome = document.querySelector('#nome')
+var data = document.querySelector('#data')
+var sexo = document.querySelector('#sexo')
+var bi = document.querySelector('#bi')
+var morada = document.querySelector('#morada')
+var telefone = document.querySelector('#telefone')
+var telefoneFamiliar = document.querySelector('#telefoneFamiliar')
+var email = document.querySelector('#email')
+var objectivo = document.querySelector('#objectivo')
+var maiorVicio = document.querySelector('#maiorVicio')
+var turmaGinastica = document.querySelector('#turmaGinastica')
+var algoMais = document.querySelector('#algoMais')
+var btnEnviar = document.querySelector('#btnEnviar')
+
+alert('Preencher o formulário de cadastro da Academia Turma de Aeróbica é importante para personalizar os treinos e acompanhar seu progresso de forma eficiente. Também ajuda a manter um registro atualizado dos alunos e receber informações sobre novidades e promoções. Não deixe de preencher o formulário e aproveitar ao máximo sua experiência na academia.')
